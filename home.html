@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <img src="images/logo.png" alt="TASKNEST Logo" class="logo-img"> 
+            <h2>TASKNEST</h2>
+        
+    </div>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<div class="main-content">
+    <div class="container">
+        <h1>Manage Your Tasks</h1>
+        <p>Organize your daily To-do lists!</p>
+
+        <form id="task-form">
+            <input type="text" id="new-task" placeholder="Enter a new task" required>
+            <input type="date" id="due-date">
+            <button type="submit" id="add-task-btn">Add Task</button>
+        </form>
+
+        <ul id="task-list">
+            <!-- Task items will be inserted here by JavaScript -->
+        </ul>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Student Task Manager. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
